@@ -34,9 +34,9 @@ public class ProductController {
         productService.deleteById(id);
     }
 
-    @GetMapping("/products/change_score")
-    public void changeScore(@RequestParam Long studentId, @RequestParam Integer delta) {
-        productService.changeScore(studentId, delta);
+    @GetMapping("/products/change_price")
+    public void changePrice(@RequestParam Long productId, @RequestParam Integer delta) {
+        productService.changePrice(productId, delta);
     }
 
     @GetMapping("/products/score_between")
